@@ -20,7 +20,7 @@
     "strftime": "^0.10.0"
   },
   "devDependencies": {
-    "jest": "^22.4.3",
+    "jest": "^23.0.0",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
     "standard": "^10.0.3"
