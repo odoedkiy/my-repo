@@ -1,0 +1,39 @@
+{
+  "name": "probot-messenger",
+  "version": "0.0.1",
+  "description": "A Probot app to deliver messages from events across various services (email, IRC, XMPP, etc.)",
+  "author": "Garen J. Torikian <gjtorikian@gmail.com>",
+  "license": "LGPL",
+  "repository": "https://github.com/gjtorikian/probot-messenger.git",
+  "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "nodemailer": "^4.6.4",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "probot": "^6.0.0",
+    "probot-config": "^0.1.0",
+    "strftime": "^0.10.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }, 
+  "renovate": {
+    "renovateFork": true
+  }
+}
